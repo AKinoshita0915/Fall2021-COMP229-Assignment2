@@ -10,7 +10,7 @@ let contactController = require("../controllers/contact.js");
 function requireAuth(req, res, next)
 {
     // check if user is logged in
-    if(!req.isAuthenicated())
+    if(!req.isAuthenticated())
     {
         return res.redirect("/login");
     }
