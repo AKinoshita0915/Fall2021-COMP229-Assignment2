@@ -26,13 +26,13 @@ router.get('/contact', indexController.displayContactPage);
 router.get('/login', indexController.displayLoginPage);
 
 /* POST Route for proceed Login page */
-router.get('/login', indexController.processLoginPage);
+router.post('/login', indexController.processLoginPage);
 
 /* GET Route for display Login page */
 router.get('/register', indexController.displayRegisterPage);
 
 /* POST Route for proceed Login page */
-router.get('/register', indexController.processRegisterPage);
+router.post('/register', indexController.processRegisterPage);
 
 /* GET to Logout */
 router.get('/logout', indexController.performLogout);
